@@ -6,11 +6,7 @@ html,body{
     background-size: cover;
     overflow-x:hidden;
     overflow-y:hidden;
-
-
-
 }
-
 
 
 
@@ -45,6 +41,8 @@ opacity:1;}
     100% { opacity: 1; }
   }
 
+  p { font-size: 2.5vw; }
+
   .text{
     font-family: "Degular";
     font-weight: bold;
@@ -54,6 +52,7 @@ opacity:1;}
     animation-name:fadeInText;
     animation-duration: 7s;
     opacity:1;
+
   }
 
   @keyframes fadeInText {
@@ -64,13 +63,9 @@ opacity:1;}
     100% { opacity: 1; }
   }
 
- @media (min-width: 1000px) {
-    p { font-size: 3vw; }
-  }
-
 
   
-  @media (min-width: 700px) {
+  @media (max-width: 1000px) {
     p { font-size: 4.5vw; }
 
     .center {    float: right;
@@ -88,7 +83,7 @@ opacity:1;}
         width: 45vh;}
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
 
     .center {    float: right;
         position:relative;
