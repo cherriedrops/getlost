@@ -4,6 +4,9 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
 
 }
 
@@ -61,3 +64,19 @@ opacity:1;}
 
     100% { opacity: 1; }
   }
+
+  @media only screen and (max-width: 600px) {
+    .center {    float: right;
+        position:relative;
+        left:-55%;
+        top:20%;
+      }
+    
+    .center > .logo {
+        position: relative;
+        left:50%;
+    }
+
+    }
+
+
