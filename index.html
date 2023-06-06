@@ -13,6 +13,7 @@
     <script type="text/javascript">
 
       const options = {
+    
 
         interactivity: {
           events: {
@@ -45,62 +46,10 @@
            type: "images",
 
            "images" :[
-            {"src": "images/01.png",
-            "width": 100,
-            "height": 100,
-           },
 
-           {"src": "images/02.png",
-            "width": 100,
-            "height": 100,
-           },
 
-           {"src": "images/03.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/04.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/05.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/06.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/07.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/08.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/09.png",
-            "width": 100,
-            "height": 100,
-           },
-           {"src": "images/10.png",
-            "width": 100,
-            "height": 100,
-           },
-
-           {"src": "images/11.png",
-            "width": 100,
-            "height": 100,
-           },
            {"src": "images/12.png",
-            "width": 100,
-            "height": 100,
+            "width": screen.height/10,
            },
   
           ]
@@ -108,7 +57,7 @@
         },
 
           size: {
-            value: { min: 30, max: 150 }, // this sets the size of the particles
+            value: { min: screen.width/100, max: screen.width/10}, // this sets the size of the particles
           },
 
 
@@ -118,8 +67,14 @@
       tsParticles.load("tsparticles", options);
     </script></div>
 
-
-<span class="line">
+<div class="center">
+  <ul class="logo" >
+    <img src="images/logo.png">
+    <p class="text">
+      GOLDSMITHS BA DESIGN <br> DEGREE SHOW 2023
+    </p>
+  </ul>
+</div>
   
 </span>  
 </body>

@@ -1,14 +1,56 @@
-
-.tsparticles {
-    animation: spin 30s;
+html,body{
+    height:100%;
 }
 
-@keyframes spin {
-    0% {
-        rotate(0deg);
-    }
 
-    100% {
-        rotate (100deg);
-    }
+.center {
+    float: right;
+    position:relative;
+    left:-50%;
+    top:20%;
+  }
+
+.center > .logo {
+    position: relative;
+    left:50%;
 }
+
+.logo{
+    position: relative;
+}
+
+img{
+width: 35vw;
+animation-name:fadeIn;
+animation-duration: 8s;
+opacity:1;}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+
+    50%{opacity:0;}
+
+    100% { opacity: 1; }
+  }
+
+  .text{
+    font-family: "Degular";
+    font-size: 3vw;
+    font-weight: bold;
+    line-height:90%;
+    text-align:center;
+    margin-top: -3vh;
+
+    animation-name:fadeInText;
+    animation-duration: 11s;
+    opacity:1;
+  }
+
+  @keyframes fadeInText {
+    0% { opacity: 0; }
+
+    50%{opacity:0;}
+
+    100% { opacity: 1; }
+  }
