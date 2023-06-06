@@ -8,6 +8,7 @@ html,body{
     overflow-y:hidden;
 
 
+
 }
 
 
@@ -46,12 +47,10 @@ opacity:1;}
 
   .text{
     font-family: "Degular";
-    font-size: 3vw;
     font-weight: bold;
     line-height:90%;
     text-align:center;
     margin-top: -3vh;
-
     animation-name:fadeInText;
     animation-duration: 7s;
     opacity:1;
@@ -65,7 +64,32 @@ opacity:1;}
     100% { opacity: 1; }
   }
 
-  @media only screen and (max-width: 600px) {
+ @media (min-width: 1000px) {
+    p { font-size: 3vw; }
+  }
+
+
+  
+  @media (min-width: 700px) {
+    p { font-size: 4.5vw; }
+
+    .center {    float: right;
+        position:relative;
+        left:-51%;
+        top:20%;
+      }
+    
+    .center > .logo {
+        position: relative;
+        left:49%;
+    }
+
+    img{
+        width: 45vh;}
+  }
+
+  @media (max-width: 550px) {
+
     .center {    float: right;
         position:relative;
         left:-55%;
@@ -77,6 +101,12 @@ opacity:1;}
         left:50%;
     }
 
-    }
+    p { font-size: 6vw; }
+
+    img{
+        width: 40vh;}
+
+}
+
 
 
